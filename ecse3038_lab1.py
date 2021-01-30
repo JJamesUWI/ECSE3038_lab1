@@ -26,7 +26,17 @@ def validatePassword(key):
         return val
 
 
+def sumUpToN(num):
+    sum = 0
+    if num > 1:
+        sum = (num * (num+1))/2
+    else:
+        sum = -1
+    return sum
+
 # Main method
+
+
 def main():
 
     # Q1
@@ -38,7 +48,11 @@ def main():
     if (validatePassword(password)):
         print("Password is valid")
     else:
-        print("Invalid Password !!")
+        print("Password is invalid!")
+
+    # Q3
+    sum_to_N = sumUpToN(200)
+    print(sum_to_N)
 
 
 # Driver Code
